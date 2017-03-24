@@ -7,7 +7,6 @@
 ;; close help page
 (setq inhibit-splash-screen 1)
 
-
 ;;mode
 (global-linum-mode)
 (line-number-mode t)

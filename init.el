@@ -8,6 +8,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'init-elpa)
 (require 'init-themes)
+(require-package 'diminish)
 
 (defconst *is-a-mac* (eq system-type 'darwin))
 
@@ -15,7 +16,7 @@
 (require 'init-editing-utils)
 (require 'init-mmm)
 
-(require-package 'diminish)
+
 ;; require costoms
 (require 'init-display)
 (require 'init-fonts)
@@ -40,9 +41,7 @@
 (require 'init-dash)
 (require 'init-javascript)
 
-;;rvm
-(require-package 'rvm)
-(rvm-use-default)
+(require 'cust-hotkey)
 
 ;; ido-mode
 (ido-mode t)
@@ -54,22 +53,11 @@
       ido-separator"\n"
       ido-default-file-method 'selected-window)
 
-;; 快速打开配置文件
-(defun open-init-file()
-  (interactive)
-  (find-file "~/.emacs.d/init.el"))
-
-;; 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
-(global-set-key (kbd "<f2>") 'open-init-file)
-
 ;; 关闭自动保存的功能
 (setq auto-save-default nil)
 
 ;; 禁止自动备份
 (setq make-backup-files nil)
-
-;; hotkey for shell
-(global-set-key (kbd "C-x m") 'shell)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

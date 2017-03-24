@@ -14,5 +14,8 @@
     (after-load 'guide-key
       (add-to-list 'guide-key/guide-key-sequence "C-c r"))))
 
+;;rvm
+(require-package 'rvm)
+(rvm-use-default)
 
 (provide 'init-rails)
