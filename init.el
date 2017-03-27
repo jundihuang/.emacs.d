@@ -17,6 +17,7 @@
 (require 'init-mmm)
 
 ;; require costoms
+(require 'init-ido)
 (require 'init-display)
 (require 'init-fonts)
 (require 'init-editing)
@@ -51,15 +52,8 @@
 ;; 方法跳转
 (require 'init-dumb-jump)
 
-;; ido-mode
-(ido-mode t)
-(setq ido-enable-prefix nil
-      ;;ido-enable-flex-matching t
-      ido-create-new-buffer 'always
-      ido-use-filename-at-point 'guess
-      ido-max-prospects 10
-      ido-separator"\n"
-      ido-default-file-method 'selected-window)
+;; git
+(require 'init-git)
 
 ;; 关闭自动保存的功能
 (setq auto-save-default nil)
@@ -79,7 +73,7 @@
  '(dumb-jump-mode nil)
  '(package-selected-packages
    (quote
-    (ag ace-jump-mode css-eldoc skewer-less less-css-mode scss-mode sass-mode rainbow-mode guide-key highlight-escape-sequences whole-line-or-region move-dup page-break-lines multiple-cursors avy expand-region browse-kill-ring highlight-symbol undo-tree rainbow-delimiters nlinum indent-guide unfill default-text-scale yari yaml-mode whitespace-cleanup-mode switch-window smex skewer-mode rvm ruby-hash-syntax rspec-mode robe rinari projectile-rails org-pomodoro org-mac-iCal org-fstree org-cliplink mmm-mode material-theme markdown-mode json-mode js-comint grab-mac-link goto-gem fullframe dracula-theme diminish dash-at-point company-quickhelp coffee-mode bundler)))
+    (ruby-end git-messenger magit git-timemachine gitconfig-mode gitignore-mode git-blamed helm-projectile ido-better-flex ag ace-jump-mode css-eldoc skewer-less less-css-mode scss-mode sass-mode rainbow-mode guide-key highlight-escape-sequences whole-line-or-region move-dup page-break-lines multiple-cursors avy expand-region browse-kill-ring highlight-symbol undo-tree rainbow-delimiters nlinum indent-guide unfill default-text-scale yari yaml-mode whitespace-cleanup-mode switch-window smex skewer-mode rvm ruby-hash-syntax rspec-mode robe rinari projectile-rails org-pomodoro org-mac-iCal org-fstree org-cliplink mmm-mode material-theme markdown-mode json-mode js-comint grab-mac-link goto-gem fullframe dracula-theme diminish dash-at-point company-quickhelp coffee-mode bundler)))
  '(which-function-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

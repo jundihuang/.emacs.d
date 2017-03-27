@@ -7,6 +7,6 @@
 (setq dumb-jump-selector 'helm)
 (setq dumb-jump-prefer-searcher 'ag)
 
-(global-set-key (kbd "C-M-n") 'dumb-jump-go)
+(global-set-key (kbd "C-M-m") 'dumb-jump-go)
 
 (provide 'init-dumb-jump)

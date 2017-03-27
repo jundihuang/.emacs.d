@@ -138,6 +138,6 @@
 
 ;(add-to-list 'mmm-set-file-name-for-modes 'ruby-mode)
 
-
+(require-package 'ruby-end)
 
 (provide 'init-ruby-mode)

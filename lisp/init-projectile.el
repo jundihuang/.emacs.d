@@ -15,4 +15,8 @@
          (format " Pr[%s]" (projectile-project-name)))))))
 
 
+;;(setq helm-projectile-fuzzy-match nil)
+;;(require-package 'helm-projectile)
+;;(helm-projectile-on)
+
 (provide 'init-projectile)

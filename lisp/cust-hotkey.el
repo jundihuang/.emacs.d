@@ -16,6 +16,15 @@
 (global-set-key (kbd "C-c m l") 'avy-copy-line)
 
 ;; find grep
-(global-set-key (kbd "C-x g") 'find-grep)
+(global-set-key (kbd "C-c g") 'find-grep)
+
+
+(global-set-key (kbd "M-1") 'delete-other-windows)
+(global-set-key (kbd "M-2") 'split-window-below)
+(global-set-key (kbd "M-3") 'split-window-right)
+(global-set-key (kbd "M-0") 'delete-window)
+
+(global-set-key (kbd "M-[") 'indent-rigidly-left-to-tab-stop)
+(global-set-key (kbd "M-]") 'indent-rigidly-right-to-tab-stop)
 
 (provide 'cust-hotkey)
