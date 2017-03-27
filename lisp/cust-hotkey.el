@@ -12,4 +12,10 @@
 ;; projectile-find-file-in-known-projects
 (global-set-key (kbd "C-c f") 'projectile-find-file-in-known-projects)
 
+;; copy line
+(global-set-key (kbd "C-c m l") 'avy-copy-line)
+
+;; find grep
+(global-set-key (kbd "C-x g") 'find-grep)
+
 (provide 'cust-hotkey)

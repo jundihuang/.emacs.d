@@ -16,7 +16,6 @@
 (require 'init-editing-utils)
 (require 'init-mmm)
 
-
 ;; require costoms
 (require 'init-display)
 (require 'init-fonts)
@@ -43,6 +42,15 @@
 
 (require 'cust-hotkey)
 
+;; 语法验证 ruby
+(require 'init-flymark)
+
+;; 搜索选中 字符
+(require 'init-ace-jump-mode)
+
+;; 方法跳转
+(require 'init-dumb-jump)
+
 ;; ido-mode
 (ido-mode t)
 (setq ido-enable-prefix nil
@@ -68,9 +76,11 @@
  '(custom-safe-themes
    (quote
     ("eb0a314ac9f75a2bf6ed53563b5d28b563eeba938f8433f6d1db781a47da1366" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" default)))
+ '(dumb-jump-mode nil)
  '(package-selected-packages
    (quote
-    (css-eldoc skewer-less less-css-mode scss-mode sass-mode rainbow-mode guide-key highlight-escape-sequences whole-line-or-region move-dup page-break-lines multiple-cursors avy expand-region browse-kill-ring highlight-symbol undo-tree rainbow-delimiters nlinum indent-guide unfill default-text-scale yari yaml-mode whitespace-cleanup-mode switch-window smex skewer-mode rvm ruby-hash-syntax rspec-mode robe rinari projectile-rails org-pomodoro org-mac-iCal org-fstree org-cliplink mmm-mode material-theme markdown-mode json-mode js-comint grab-mac-link goto-gem fullframe dracula-theme diminish dash-at-point company-quickhelp coffee-mode bundler))))
+    (ag ace-jump-mode css-eldoc skewer-less less-css-mode scss-mode sass-mode rainbow-mode guide-key highlight-escape-sequences whole-line-or-region move-dup page-break-lines multiple-cursors avy expand-region browse-kill-ring highlight-symbol undo-tree rainbow-delimiters nlinum indent-guide unfill default-text-scale yari yaml-mode whitespace-cleanup-mode switch-window smex skewer-mode rvm ruby-hash-syntax rspec-mode robe rinari projectile-rails org-pomodoro org-mac-iCal org-fstree org-cliplink mmm-mode material-theme markdown-mode json-mode js-comint grab-mac-link goto-gem fullframe dracula-theme diminish dash-at-point company-quickhelp coffee-mode bundler)))
+ '(which-function-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

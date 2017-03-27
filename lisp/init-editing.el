@@ -4,6 +4,8 @@
 ;; 使用space代替tab
 (setq-default indent-tabs-mode nil);
 
+(setq indent-line-function 'insert-tab)
+
 ;; 选中并输入时会替换
 (delete-selection-mode 1)
 
