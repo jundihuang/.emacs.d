@@ -20,5 +20,7 @@ This is helpful for writeroom-mode, in particular."
 (add-hook 'visual-fill-column-mode-hook
           'sanityinc/maybe-adjust-visual-fill-column)
 
+;; 默认字体
+(set-default-font "-*-Monaco-bold-normal-normal-*-*-*-*-*-m-0-iso10646-1")
 
 (provide 'init-fonts)

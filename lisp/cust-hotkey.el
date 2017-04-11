@@ -27,4 +27,9 @@
 (global-set-key (kbd "M-[") 'indent-rigidly-left-to-tab-stop)
 (global-set-key (kbd "M-]") 'indent-rigidly-right-to-tab-stop)
 
+;; 键盘宏
+(global-set-key (kbd "<f10>") 'call-last-kbd-macro)
+
+(global-set-key (kbd "C-x K") 'kill-some-buffers)
+
 (provide 'cust-hotkey)

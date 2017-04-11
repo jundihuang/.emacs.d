@@ -17,6 +17,7 @@
 (require 'init-mmm)
 
 ;; require costoms
+(require 'init-ibuffer)
 (require 'init-ido)
 (require 'init-display)
 (require 'init-fonts)
@@ -60,21 +61,18 @@
 
 ;; 禁止自动备份
 (setq make-backup-files nil)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (material)))
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-bright)))
  '(custom-safe-themes
    (quote
-    ("eb0a314ac9f75a2bf6ed53563b5d28b563eeba938f8433f6d1db781a47da1366" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" default)))
- '(dumb-jump-mode nil)
+    ("98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" default)))
  '(package-selected-packages
    (quote
-    (ruby-end git-messenger magit git-timemachine gitconfig-mode gitignore-mode git-blamed helm-projectile ido-better-flex ag ace-jump-mode css-eldoc skewer-less less-css-mode scss-mode sass-mode rainbow-mode guide-key highlight-escape-sequences whole-line-or-region move-dup page-break-lines multiple-cursors avy expand-region browse-kill-ring highlight-symbol undo-tree rainbow-delimiters nlinum indent-guide unfill default-text-scale yari yaml-mode whitespace-cleanup-mode switch-window smex skewer-mode rvm ruby-hash-syntax rspec-mode robe rinari projectile-rails org-pomodoro org-mac-iCal org-fstree org-cliplink mmm-mode material-theme markdown-mode json-mode js-comint grab-mac-link goto-gem fullframe dracula-theme diminish dash-at-point company-quickhelp coffee-mode bundler)))
- '(which-function-mode t))
+    (ibuffer-vc yari yaml-mode xref-js2 whole-line-or-region whitespace-cleanup-mode unfill undo-tree switch-window smex skewer-less scss-mode sass-mode rvm ruby-hash-syntax ruby-end rspec-mode robe rinari rainbow-mode rainbow-delimiters projectile-rails page-break-lines org-pomodoro org-mac-iCal org-fstree org-cliplink nlinum multiple-cursors move-dup monokai-theme mmm-mode material-theme markdown-mode magit less-css-mode json-mode js-comint indent-guide ido-better-flex highlight-symbol highlight-escape-sequences helm-projectile helm-ag guide-key grab-mac-link goto-gem gitignore-mode gitconfig-mode git-timemachine git-messenger git-blamed fullframe expand-region dumb-jump dracula-theme diminish default-text-scale dash-at-point css-eldoc company-quickhelp color-theme-sanityinc-tomorrow coffee-mode bundler browse-kill-ring avy atom-one-dark-theme ag ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
